@@ -46,6 +46,19 @@ Plugins:
   https://docs.getdbt.com/docs/installation
   ```
 
+## Creating your Snowflake account
+Snowflake offers a 30 day free-trial account for you to test their Data Warehouse. As it integrates flawlessly with dbt, we are going to use as our DW in this project.
+
+Go to [Snowflake webpage](https://www.snowflake.com) and click on "Start for free" on the top right blue buttom. Make sure to choose the following options:
+- Snowflake edition: Standard
+- Cloud provider: AWS
+- AWS region: US East Ohio
+
+You'll receive an email with the Snowflake account creation confirmation, make sure to accept it and access the platform.
+
+## Importing data to Snowflake
+After accessing Snowflake 
+
 ## Creating a dbt project
 The commands bellow are going to guide you on creating a new dbt project inside your repository folder.
 First, create a `.dbt` folder to receive the profile files.
