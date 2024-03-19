@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 dbt-snowflake = "1.7.1"
+sqlfluff = "^3.0.2"
 
 
 [build-system]
