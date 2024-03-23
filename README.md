@@ -268,3 +268,26 @@ If everything is correctly set, you get a return similar to the one bellow.
 
 13:36:25  All checks passed!
 ```
+
+## Creating dbt models
+XXX
+
+
+## Types of materialization
+There are 5 types of materialization in dbt:
+1. View: 
+  - Lightweight representation
+  - Don't reuse it too ofter
+  - Avoid if you read from the same model several times
+2. Table:
+  - You read multiple times from it
+  - Avoid if your model is populated incrementally
+3. Incremental (table appends):
+  - Fact tables
+  - Appends to tables
+  - Avoid if you want to update historical records
+4. Ephemeral (CTEs):
+  - Just want to alias to your data
+  - Avoid if you read from the same model several times
+5. Materialized views:
+  - It's a view that behaves likes a table, as it stores the query results
