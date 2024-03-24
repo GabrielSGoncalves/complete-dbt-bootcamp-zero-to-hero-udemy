@@ -6,7 +6,7 @@ WITH raw_listings AS (
 )
 
 SELECT 
-    id AS listings_id,
+    id AS listing_id,
     name AS listing_name,
     listing_url,
     room_type,

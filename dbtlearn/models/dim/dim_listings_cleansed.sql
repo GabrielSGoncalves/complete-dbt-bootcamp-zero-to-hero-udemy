@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='view'
+    )
+}}
+
 WITH src_listings AS (
     SELECT *
     FROM {{ ref("src_listings") }}
@@ -5,7 +11,7 @@ WITH src_listings AS (
 )
 
 SELECT
-    listings_id,
+    listing_id,
     listing_name,
     room_type,
     host_id,
